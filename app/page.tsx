@@ -3,7 +3,6 @@ import { ArrowRightIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 // import styles from '@/app/ui/home.module.css';
 import { roboto } from '@/app/ui/font';
-import { lusitana } from '@/app/ui/font';
 import heroIcon from '@/public/hero-desktop.png';
 import heroIconForMobile from '@/public/hero-mobile.png';
 import icon from '@/public/ashish-high-resolution-logo-transparent.png';
@@ -13,12 +12,8 @@ import Image from 'next/image';
 export default function Page() {
   return (
     <main className="flex min-h-screen flex-col p-6">
-      <p className={`${lusitana.className} antialiased`}>
-        Hey! This is me Ashish
-      </p>
-      <p
-        className={`${lusitana.className} text-xl text-gray-800 md:text-3xl md:leading-normal`}
-      >
+      <p>Hey! This is me Ashish</p>
+      <p className={`text-xl text-gray-800 md:text-3xl md:leading-normal`}>
         <strong>Welcome to Acme.</strong> This is the example for the{' '}
         <a href="https://nextjs.org/learn/" className="text-blue-500">
           Next.js Learn Course
